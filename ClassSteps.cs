@@ -2,10 +2,10 @@ using System;
 
 namespace task_3_3
 {
-    public sealed class Stupenchatiy : Massive, IStup
+    public sealed class Steps : Massive, IStD
     {
         private int[][] mass;
-        public Stupenchatiy(int m, bool choice):base(choice)
+        public Steps(int m, bool choice):base(choice)
         {
             mass = new int[m][];
          
@@ -29,7 +29,7 @@ namespace task_3_3
 
         protected override void GetMass_user()
         {
-            Console.WriteLine("Вы создаете ступенчатый массив  ");
+            Console.WriteLine("Введите элементы ступенчатого массива:  ");
             int n = mass.GetLength(0);
             for (int i = 0; i < n; i++)
             {

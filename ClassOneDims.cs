@@ -2,12 +2,12 @@ using System;
 
 namespace task_3_3
 {
-    public sealed class Odnomerniy : Massive, IOdn
+    public sealed class OneDims : Massive, IOD
     {
         private int[] mass;
 
 
-        public Odnomerniy(int n, bool choice):base(choice)
+        public OneDims(int n, bool choice):base(choice)
         {
             mass = new int[n];
            
@@ -27,7 +27,7 @@ namespace task_3_3
 
         protected override void GetMass_user()
         {
-            Console.WriteLine("Вы создаете одномерный массив  ");
+            Console.WriteLine("Введите элементы одномерного массива: ");
             for (int i = 0; i < mass.Length; i++)
             {
                 Console.Write($"Элемент {i}: ");

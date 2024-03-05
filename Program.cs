@@ -5,9 +5,9 @@ class Program
  static void Main()
  {
      Massive[] mass = new Massive[3];
-     mass[0] = new Odnomerniy(2, false);
-     mass[1] = new Dvumerniy(3,3,false);
-     mass[2] = new Stupenchatiy(3, false);
+     mass[0] = new OneDims(2, false);
+     mass[1] = new TwoDims(3,3,false);
+     mass[2] = new Steps(3, false);
     //  for (int i = 0; i < 3; i++)
     //  {
     //      mass[i].PrintMass();
@@ -28,9 +28,9 @@ class Program
         base1.Average();
     }
 
-     ((IOdn)mass[0]).GetMassWoDubs();
-    ((IDvum)mass[1]).Print_snake();
-     ((IStup)mass[2]).EditArray();
+     ((IOD)mass[0]).GetMassWoDubs();
+    ((ITD)mass[1]).Print_snake();
+     ((IStD)mass[2]).EditArray();
 
  }
 }

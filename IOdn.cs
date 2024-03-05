@@ -1,5 +1,5 @@
 using System;
-interface IOdn
+interface IOD
 { 
     void GetMassWoDubs();
 }

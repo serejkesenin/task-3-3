@@ -1,5 +1,5 @@
 using System;
-interface IStup
+interface IStD
 {
  void EditArray();
 }

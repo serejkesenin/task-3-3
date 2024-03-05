@@ -2,11 +2,11 @@ using System;
 
 namespace task_3_3
 {
-    public sealed class Dvumerniy : Massive, IDvum
+    public sealed class TwoDims : Massive, ITD
     {
 
         private int[,] mass;
-        public Dvumerniy(int m1, int m2, bool choice):base(choice)
+        public TwoDims(int m1, int m2, bool choice):base(choice)
         {
             mass = new int[m1, m2];
             ReCreate();
@@ -27,7 +27,7 @@ namespace task_3_3
 
         protected override void GetMass_user()
         {
-            Console.WriteLine("Вы создаете двумерный массив  ");
+            Console.WriteLine("Введите элементы двумерного массива: ");
             for (int i = 0; i < mass.GetLength(0); i++)
             {
                 for (int j = 0; j < mass.GetLength(1); j++)

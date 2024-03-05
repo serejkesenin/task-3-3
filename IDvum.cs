@@ -1,5 +1,5 @@
 using System;
-interface IDvum
+interface ITD
 {
 
  void Print_snake();
